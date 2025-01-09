@@ -10,7 +10,7 @@ export default function Pricing() {
     <>
       <div className="px-10 lg:px-0 mx-auto max-w-[870px] h-[280px] flex justify-center items-center">
         {/* conatiner  */}
-        <div className="w-[450px] h-[180px] flex flex-col items-center border gap-4 ">
+        <div className="w-[450px] h-[180px] flex flex-col items-center gap-4 ">
           <h5 className="text-[#737373] text-[16px] text-center font-[700]">
             Pricing
           </h5>
