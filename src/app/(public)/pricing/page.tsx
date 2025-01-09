@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { FaAngleRight } from "react-icons/fa6";
 import Circle from "./Circle";
-import Image from "next/image"
+import Image from "next/image";
 import PricingBottom from "./PricingBottom";
 
 export default function Pricing() {
@@ -222,52 +222,54 @@ export default function Pricing() {
       </div>
       {/* 4rth part of sample pricing  */}
       <div className="mx-auto max-w-[1050px] h-auto lg:h-[365px] flex flex-col gap-10 ">
-           <h5 className="text-xl font-[700] text-[#252B42] text-center">Trusted By Over 4000 Big Companies</h5>
-            {/* company logos  */}
-             {/* company logos  */}
-                       <div className="max-w-[1050px] h-auto md:h-[174px] flex flex-wrap lg:flex-nowrap justify-around  gap-[50px] items-center">
-                         <div className="relative">
-                           <Image
-                             src="/Images/logo1.png"
-                             alt="Company Logo"
-                             width={103}
-                             height={34}
-                             className="object-cover "
-                           />
-                         </div>
-                         <Image
-                           src="/Images/logo2.png"
-                           alt="Company Logo"
-                           width={83}
-                           height={58}
-                         />
-                         <Image
-                           src="/Images/logo3.png"
-                           alt="Company Logo"
-                           width={102}
-                           height={74}
-                         />
-                         <Image
-                           src="/Images/logo4.png"
-                           alt="Company Logo"
-                           width={103}
-                           height={42}
-                         />
-                         <Image
-                           src="/Images/logo5.png"
-                           alt="Company Logo"
-                           width={104}
-                           height={62}
-                         />
-                         <Image
-                           src="/Images/logo6.png"
-                           alt="Company Logo"
-                           width={104}
-                           height={74}
-                         />
-                       </div>
+        <h5 className="text-xl font-[700] text-[#252B42] text-center">
+          Trusted By Over 4000 Big Companies
+        </h5>
+        {/* company logos  */}
+        {/* company logos  */}
+        <div className="max-w-[1050px] h-auto md:h-[174px] flex flex-wrap lg:flex-nowrap justify-around  gap-[50px] items-center">
+          <div className="relative">
+            <Image
+              src="/Images/logo1.png"
+              alt="Company Logo"
+              width={103}
+              height={34}
+              className="object-cover "
+            />
+          </div>
+          <Image
+            src="/Images/logo2.png"
+            alt="Company Logo"
+            width={83}
+            height={58}
+          />
+          <Image
+            src="/Images/logo3.png"
+            alt="Company Logo"
+            width={102}
+            height={74}
+          />
+          <Image
+            src="/Images/logo4.png"
+            alt="Company Logo"
+            width={103}
+            height={42}
+          />
+          <Image
+            src="/Images/logo5.png"
+            alt="Company Logo"
+            width={104}
+            height={62}
+          />
+          <Image
+            src="/Images/logo6.png"
+            alt="Company Logo"
+            width={104}
+            height={74}
+          />
+        </div>
       </div>
-      <PricingBottom/>
+      <PricingBottom />
     </>
   );
 }

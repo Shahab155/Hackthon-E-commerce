@@ -84,8 +84,8 @@ export default function Product1() {
             </div>
             {/* div -3  */}
             <div className="h-auto md:h-[30%]  flex flex-col items-center md:flex-row gap-[20px] md:gap-[15px] px-10 md:px-0">
-                <button className="btnLg rounded-md">Select Options</button>
-                <ProductIcons/>
+              <button className="btnLg rounded-md">Select Options</button>
+              <ProductIcons />
             </div>
           </div>
         </div>
@@ -93,89 +93,104 @@ export default function Product1() {
 
       {/* Additional Information  */}
       <div className="h-auto md:h-[92px] my-10 md:my-0">
-           <div className="px-10 lg:px-0 mx-auto lg:max-w-[1051px] md:max-w-[950px] w-full  h-auto md:h-[72px] flex flex-wrap justify-center md:justify-start items-center  gap-10 text-[#737373] text-sm font-[700] ">
-            <Link href={'#'}>Description</Link>
-            <Link href={'#'}>Additional Information</Link>
-            <Link href={'#'}>Revies <span className="text-[#23856D]">(0)</span></Link>
-
-           </div>
+        <div className="px-10 lg:px-0 mx-auto lg:max-w-[1051px] md:max-w-[950px] w-full  h-auto md:h-[72px] flex flex-wrap justify-center md:justify-start items-center  gap-10 text-[#737373] text-sm font-[700] ">
+          <Link href={"#"}>Description</Link>
+          <Link href={"#"}>Additional Information</Link>
+          <Link href={"#"}>
+            Revies <span className="text-[#23856D]">(0)</span>
+          </Link>
+        </div>
       </div>
 
       {/* the quik fox jumps over  */}
-   
-    {/* container  */}
-       <div className="my-20 md:my-0 px-10 lg:px-5 xl:px-0 m-auto lg:max-w-[1056px] md:max-w-[950px] h-auto lg:h-[500px] flex  items-center ">
+
+      {/* container  */}
+      <div className="my-20 md:my-0 px-10 lg:px-5 xl:px-0 m-auto lg:max-w-[1056px] md:max-w-[950px] h-auto lg:h-[500px] flex  items-center ">
         {/* row  */}
         <div className="w-full h-auto lg:h-[425px] flex flex-wrap sm:justify-center lg:flex-nowrap gap-[30px]">
-           {/* image  */}
-           <div className="relative ">
-          <Image src={'/Images/table.jpeg'} alt='table' width={316} height={372} className="sm:min-w-[316px] lg:w-[316px] h-[372px] object-cover rounded-2xl"/>
-           </div>
-           {/* text  */}
-           <div className="w-[332px] h-[427px] flex flex-col gap-8">
-             <h3 className="text-2xl font-[700] text-[#252B42]">the quick fox jumps over </h3>
-             {/* paragraphs  */}
-             <div className="w-[332px] h-[340px] flex flex-col gap-10 text-sm text-[#737373] font-[400]">
-              <p>Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent door ENIM RELIT Mollie. Excitation venial consequent sent nostrum met.</p>
-              <p>Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent door ENIM RELIT Mollie. Excitation venial consequent sent nostrum met.</p>
-              <p>Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent door ENIM RELIT Mollie. Excitation venial consequent sent nostrum met.</p>
-             </div>
-           </div>
-           {/* 3rd div of row  */}
-           <div className="w-[332px] h-auto md:h-[367px]">
+          {/* image  */}
+          <div className="relative ">
+            <Image
+              src={"/Images/table.jpeg"}
+              alt="table"
+              width={316}
+              height={372}
+              className="sm:min-w-[316px] lg:w-[316px] h-[372px] object-cover rounded-2xl"
+            />
+          </div>
+          {/* text  */}
+          <div className="w-[332px] h-[427px] flex flex-col gap-8">
+            <h3 className="text-2xl font-[700] text-[#252B42]">
+              the quick fox jumps over{" "}
+            </h3>
+            {/* paragraphs  */}
+            <div className="w-[332px] h-[340px] flex flex-col gap-10 text-sm text-[#737373] font-[400]">
+              <p>
+                Met minim Mollie non desert Alamo est sit cliquey dolor do met
+                sent. RELIT official consequent door ENIM RELIT Mollie.
+                Excitation venial consequent sent nostrum met.
+              </p>
+              <p>
+                Met minim Mollie non desert Alamo est sit cliquey dolor do met
+                sent. RELIT official consequent door ENIM RELIT Mollie.
+                Excitation venial consequent sent nostrum met.
+              </p>
+              <p>
+                Met minim Mollie non desert Alamo est sit cliquey dolor do met
+                sent. RELIT official consequent door ENIM RELIT Mollie.
+                Excitation venial consequent sent nostrum met.
+              </p>
+            </div>
+          </div>
+          {/* 3rd div of row  */}
+          <div className="w-[332px] h-auto md:h-[367px]">
             <div className="h-auto md:h-[188px] flex flex-col gap-[30px]">
-             <h3 className="text-2xl font-[700] text-[#252B42]">the quick fox jumps over </h3>
-             <div className="flex flex-col gap-[10px]">
-             <p className="flex items-center text-[#737373] font-[500]"> 
-            <FaAngleRight className="size-6 font-light text-[#BDBDBD]" />{" "}
-            the quick fox jumps over the lazy dog
-            </p>
-            <p className="flex items-center text-[#737373] font-[500]"> 
-            <FaAngleRight className="size-6 font-light text-[#BDBDBD]" />{" "}
-            the quick fox jumps over the lazy dog
-            </p>
-            <p className="flex items-center text-[#737373] font-[500]"> 
-            <FaAngleRight className="size-6 font-light text-[#BDBDBD]" />{" "}
-            the quick fox jumps over the lazy dog
-            </p>
-            <p className="flex items-center text-[#737373] font-[500]"> 
-            <FaAngleRight className="size-6 font-light text-[#BDBDBD]" />{" "}
-            the quick fox jumps over the lazy dog
-            </p>
-            
-             </div>
-           
+              <h3 className="text-2xl font-[700] text-[#252B42]">
+                the quick fox jumps over{" "}
+              </h3>
+              <div className="flex flex-col gap-[10px]">
+                <p className="flex items-center text-[#737373] font-[500]">
+                  <FaAngleRight className="size-6 font-light text-[#BDBDBD]" />{" "}
+                  the quick fox jumps over the lazy dog
+                </p>
+                <p className="flex items-center text-[#737373] font-[500]">
+                  <FaAngleRight className="size-6 font-light text-[#BDBDBD]" />{" "}
+                  the quick fox jumps over the lazy dog
+                </p>
+                <p className="flex items-center text-[#737373] font-[500]">
+                  <FaAngleRight className="size-6 font-light text-[#BDBDBD]" />{" "}
+                  the quick fox jumps over the lazy dog
+                </p>
+                <p className="flex items-center text-[#737373] font-[500]">
+                  <FaAngleRight className="size-6 font-light text-[#BDBDBD]" />{" "}
+                  the quick fox jumps over the lazy dog
+                </p>
+              </div>
             </div>
             <div className="h-[188px] flex flex-col gap-[30px] pt-4">
-             <h3 className="text-2xl font-[700] text-[#252B42]">the quick fox jumps over </h3>
-             <div className="flex flex-col gap-[15px]">
-             <p className="flex items-center text-[#737373] font-[500]"> 
-            <FaAngleRight className="size-6 font-light text-[#BDBDBD]" />{" "}
-            the quick fox jumps over the lazy dog
-            </p>
-            <p className="flex items-center text-[#737373] font-[500]"> 
-            <FaAngleRight className="size-6 font-light text-[#BDBDBD]" />{" "}
-            the quick fox jumps over the lazy dog
-            </p>
-            <p className="flex items-center text-[#737373] font-[500]"> 
-            <FaAngleRight className="size-6 font-light text-[#BDBDBD]" />{" "}
-            the quick fox jumps over the lazy dog
-            </p>
-           
-            
-             </div>
-           
+              <h3 className="text-2xl font-[700] text-[#252B42]">
+                the quick fox jumps over{" "}
+              </h3>
+              <div className="flex flex-col gap-[15px]">
+                <p className="flex items-center text-[#737373] font-[500]">
+                  <FaAngleRight className="size-6 font-light text-[#BDBDBD]" />{" "}
+                  the quick fox jumps over the lazy dog
+                </p>
+                <p className="flex items-center text-[#737373] font-[500]">
+                  <FaAngleRight className="size-6 font-light text-[#BDBDBD]" />{" "}
+                  the quick fox jumps over the lazy dog
+                </p>
+                <p className="flex items-center text-[#737373] font-[500]">
+                  <FaAngleRight className="size-6 font-light text-[#BDBDBD]" />{" "}
+                  the quick fox jumps over the lazy dog
+                </p>
+              </div>
             </div>
-
-           </div>
+          </div>
         </div>
+      </div>
 
-       </div>
-
-  
-   <ProductItems/>
-  
-
+      <ProductItems />
     </>
   );
 }

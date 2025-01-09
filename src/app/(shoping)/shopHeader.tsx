@@ -9,7 +9,7 @@ export default function ShopHeader() {
   return (
     <>
       <header className="bg-[#23856D] ">
-        <div className="max-w-[1020px] mx-auto  h-[46px] hidden  md:flex  justify-between items-center text-white px-5">
+        <div className="max-w-[1020px] mx-auto  h-[46px] hidden  lg:flex  justify-between items-center text-white px-5">
           {/* div 1 */}
           <div className="flex items-center gap-4 h-12 ">
             {/* inner 1 */}
@@ -84,14 +84,14 @@ export default function ShopHeader() {
       {/*  Navbar  */}
       <nav className="bg-[#FFF]">
         {/* main  div*/}
-        <div className=" hidden md:flex items-center mx-auto gap-16 max-w-[1020px] h-[58px] px-4 ">
+        <div className=" hidden md:flex justify-end items-center mx-auto gap-16  max-w-[1020px] h-[58px] px-4 ">
           {/* 1st div  */}
           <div className="">
             <h1 className="text-2xl text-[#252B42] font-[700]">Bandage</h1>
           </div>
           {/* 2nd div  */}
           <div className="flex justify-between w-full ">
-            <ul className="w-[361px] hidden  md:flex items-center gap-[15px] font-[700] text-[#737373] text-sm ">
+            <ul className="w-full lg:w-[361px] hidden  md:flex items-center md:justify-end gap-[15px] font-[700] text-[#737373] text-sm ">
               <li>
                 <Link href="/">Home</Link>
               </li>
@@ -123,7 +123,7 @@ export default function ShopHeader() {
               </li>
             </ul>
             {/* button and icons  */}
-            <div className="flex justify-between w-[330px] text-[#23A6F0] items-center">
+            <div className="flex justify-between w-[330px] text-[#23A6F0] items-center md:hidden lg:flex">
               <div className="flex gap-[10px] font-[700] text-sm ">
                 <button>
                   <i className="bi bi-person text-[16px]"></i>
@@ -151,20 +151,7 @@ export default function ShopHeader() {
           
         </div>
         
-        {/* navabar at small screen  */}
-        <div className="flex  md:w-full md:hidden  ">
-          <div className="w-full flex justify-between px-5 py-4">
-
-          <h1 className="text-2xl text-[#252B42] font-[700]">Bandage</h1>
-          
-        <div className="flex gap-5 text-2xl font-[700]">
-         <i className="bi bi-search"></i>
-          <i className="bi bi-cart3"></i> 
-          <i className="bi bi-list"></i>
-
-          </div>
-        </div>
-           </div>
+    
       </nav>
     </>
   );

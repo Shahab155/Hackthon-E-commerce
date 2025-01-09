@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,13 +6,11 @@ import { BsEnvelope } from "react-icons/bs";
 import { Menu, MenuButton } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
-
 export default function Header() {
-
   return (
-    <> 
+    <>
       <header className="bg-[#252B42]">
-        <div className="max-w-[1340px]  mx-auto  h-[58px] hidden  md:flex  justify-between items-center text-white px-5 ">
+        <div className="max-w-[1340px]  mx-auto  h-[58px] hidden  lg:flex  justify-between items-center text-white px-5 ">
           {/* div 1 */}
           <div className="flex items-center gap-4 h-12 ">
             {/* inner 1 */}
@@ -87,14 +85,17 @@ export default function Header() {
       {/*  Navbar  */}
       <nav className="bg-[#FFF] hidden md:flex">
         {/* main  div*/}
-        <div className="flex justify-between items-center mx-auto  max-w-[1340px]  h-[58px] px-4 ">
+        <div className="mx-auto flex justify-between items-center w-full  lg:max-w-[1340px] gap-10  h-[58px] px-4">
           {/* 1st div  */}
           <div className="">
-          <h1 className="text-2xl text-[#252B42] font-[700]"> <Link href={'/'}>Bandage </Link></h1>
+            <h1 className="text-2xl text-[#252B42] font-[700]">
+              {" "}
+              <Link href={"/"}>Bandage </Link>
+            </h1>
           </div>
           {/* 2nd div  */}
-          <div className="flex justify-between w-full ">
-            <ul className="w-[361px] hidden  md:flex items-center gap-[15px] font-[700] text-[#737373] text-sm ">
+          <div className="flex justify-between  lg:w-full">
+            <ul className="w-full md:w-[361px] hidden  md:flex md:justify-end lg:justify-start items-center gap-[15px] font-[700] text-[#737373] text-sm ">
               <li>
                 <Link href="/">Home</Link>
               </li>
@@ -102,16 +103,13 @@ export default function Header() {
               <Menu as="div" className="relative inline-block text-left ">
                 <div>
                   <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md text-[#737373] bg-white px-3 py-2 text-sm font-bold   ring-gray-300 hover:bg-gray-50">
-                  <Link href={'/products'}>
-                  Shop
-                  </Link> 
+                    <Link href={"/products"}>Shop</Link>
                     <ChevronDownIcon
                       aria-hidden="true"
                       className="-mr-1 size-5 text-gray-400"
                     />
                   </MenuButton>
                 </div>
-
               </Menu>
 
               <li>
@@ -128,7 +126,7 @@ export default function Header() {
               </li>
             </ul>
             {/* button and icons  */}
-            <div className=" justify-between w-[330px] text-[#23A6F0] items-center hidden md:flex">
+            <div className=" justify-between w-[330px] text-[#23A6F0] items-center hidden lg:flex">
               <div className="flex gap-[10px] font-[700] text-sm ">
                 <button>
                   <i className="bi bi-person text-[16px]"></i>
@@ -153,11 +151,7 @@ export default function Header() {
           </div>
           {/* closing div */}
           {/* menu Button  */}
-          
         </div>
-        
-       
-            
       </nav>
     </>
   );

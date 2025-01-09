@@ -6,8 +6,8 @@ export default function FeaturedPosts() {
   return (
     <>
       {/* conatiner */}
-      <div className="flex justify-center my-20 md:my-0 ">
-        <div className=" lg:max-w-[1050px] md:max-w-[950px] w-full px-10 lg:px-0 h-auto md:h-[1044px] flex flex-col items-center gap-20 justify-center ">
+      <div className="flex justify-center my-20 xl:my-0 ">
+        <div className="lg:max-w-[1050px] w-full px-10 lg:px-2 xl:px-0 h-auto xl:h-[1044px] flex flex-col items-center gap-20 justify-center ">
           {/* text */}
           <div className="font-[700] text-center w-full md:w-[691px] h-[134px] flex flex-col items-center gap-[10px]">
             <h6 className="text-sm text-[#23A6F0]">Practice Advice</h6>
@@ -20,7 +20,7 @@ export default function FeaturedPosts() {
             </p>
           </div>
           {/* items container */}
-          <div className=" lg:max-w-[1045px] md:max-w-[950px] h-auto lg:h-[606px] flex flex-wrap  gap-[20px]">
+          <div className=" lg:max-w-[1045px] md:max-w-[950px] h-auto xl:h-[606px] flex flex-wrap justify-center  gap-[20px]">
             {/* item-1  */}
             <div className="w-full lg:w-[328px] h-auto lg:h-[606px]">
               {/* image and new */}
@@ -40,8 +40,8 @@ export default function FeaturedPosts() {
                   Loudest à la Madison #1 (L&apos;integral)
                 </h4>
                 <p className="w-[280px] text-[#737373] font-[400] text-sm">
-                  We focus on ergonomics and meeting you where you work. It&apos;s
-                  only a keystroke away.
+                  We focus on ergonomics and meeting you where you work.
+                  It&apos;s only a keystroke away.
                 </p>
                 <div className="w-[298px] flex justify-between">
                   <p className="flex items-center gap-[5px] text-[12px] ]">
@@ -78,8 +78,8 @@ export default function FeaturedPosts() {
                   Loudest à la Madison #1 (L&apos;integral)
                 </h4>
                 <p className="w-[280px] text-[#737373] font-[400] text-sm">
-                  We focus on ergonomics and meeting you where you work. It&apos;s
-                  only a keystroke away.
+                  We focus on ergonomics and meeting you where you work.
+                  It&apos;s only a keystroke away.
                 </p>
                 <div className="w-[298px] flex justify-between">
                   <p className="flex items-center gap-[5px] text-[12px] ]">
@@ -116,8 +116,8 @@ export default function FeaturedPosts() {
                   Loudest à la Madison #1 (L&apos;integral)
                 </h4>
                 <p className="w-[280px] text-[#737373] font-[400] text-sm">
-                  We focus on ergonomics and meeting you where you work. It&apos;s
-                  only a keystroke away.
+                  We focus on ergonomics and meeting you where you work.
+                  It&apos;s only a keystroke away.
                 </p>
                 <div className="w-[298px] flex justify-between">
                   <p className="flex items-center gap-[5px] text-[12px] ]">

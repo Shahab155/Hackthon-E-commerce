@@ -10,10 +10,10 @@ export default function Contact() {
   return (
     <>
       {/* conatiner */}
-      <div className="h-[882px] flex justify-center w-full ">
-        <main className="mx-auto px-10  md:max-w-[950px] lg:max-w-[1050px] w-full h-auto md:h-[742px] flex flex-col md:flex-row gap-[35px] md:gap-0  justify-between items-center">
+      <div className="h-[882px] flex justify-center  ">
+        <main className="mx-auto px-10 xl:px-0 md:max-w-[950px] lg:max-w-[1050px] w-full h-auto lg:h-[742px] flex flex-col lg:flex-row gap-[35px] md:gap-0  justify-between items-center">
           {/* contact left  */}
-          <div className="w-full lg:w-[600px] h-[518px] flex flex-col  items-center md:items-start gap-8 mt-5 md:mt-0  ">
+          <div className="w-full md:w-[600px] h-[518px] flex flex-col  items-center md:items-start gap-8 mt-5 md:mt-0  ">
             <h5 className="font-[700] text-[#252B42] text-[16px] hidden md:flex">
               Contact Us
             </h5>
@@ -53,7 +53,7 @@ export default function Contact() {
       {/* container  */}
       {/* <div className="flex justify-center w-full">  */}
 
-      <main className="py-28 md:py-0 mx-auto  px-10  md:max-w-[950px] lg:max-w-[1050px] w-full   h-auto md:h-[814px] flex flex-col items-center justify-around ">
+      <main className="pt-16 sm:pt-32 md:pt-96 pb-10 lg:pt-0 mx-auto  px-10  md:max-w-[950px] lg:max-w-[1050px] w-full h-auto lg:h-[814px] flex flex-col items-center justify-around ">
         {/* headings  */}
         <div className="flex flex-col items-center gap-[10px]">
           <h6 className="text-[#252B42] text-sm font-[700] ">
@@ -65,7 +65,7 @@ export default function Contact() {
         </div>
         {/* contact cards  */}
         {/* container  */}
-        <div className="w-full max-w-[985px] h-auto md:h-[400px] flex flex-col md:flex-row items-center justify-between gap-6 my-10 ">
+        <div className="w-full max-w-[985px] h-auto lg:h-[400px] flex flex-col md:flex-row items-center justify-between gap-6 my-10 ">
           {/* card-1  */}
           <div className="w-[327px] h-[343px] flex flex-col items-center gap-5   ">
             <Image
@@ -126,7 +126,7 @@ export default function Contact() {
       {/* 3rd section: Talk  */}
 
       {/* container  */}
-      <div className="mx-auto  lg:max-w-[1050px] md:max-w-[850px] h-auto md:h-[348px] flex flex-col items-center gap-4 mb-28">
+      <div className="mx-auto  lg:max-w-[1050px] md:max-w-[850px] h-auto lg:h-[348px] flex flex-col items-center gap-4 mb-28">
         <Image
           src="/Images/arrow.png"
           alt="Curved Arrow"

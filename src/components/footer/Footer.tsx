@@ -5,15 +5,14 @@ export default function Footer() {
   return (
     <>
       <footer className=" ">
-        <section className="mx-auto px-6 lg:px-0 lg:max-w-[1050px]   h-[488px]">
+        <section className="mx-auto px-6 lg:px-5 xl:px-0 lg:max-w-[1050px] md:max-w-[950px]  h-[488px]">
           {/* heading and icons  */}
           <div className="h-[138px] flex flex-col gap-4 md:flex-row md:justify-between">
             <h1 className="text-2xl leading-8 text-[#252B42] font-[700]">
               Bandage
             </h1>
             {/* Social Media icons  */}
-                      <Icons/>
-
+            <Icons />
           </div>
           {/* Footer headings and Links container*/}
           <div className="flex flex-col items-start sm:flex-row sm:flex-wrap gap-12 py-14 md:p-y-0 lg:flex-nowrap justify-between h-auto md:h-[272px] ">
