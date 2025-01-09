@@ -8,7 +8,7 @@ export default function Nav() {
   return (
     <>
       <header className="block md:hidden">
-        <div className="h-[92px] w-full flex items-center justify-between px-3 ">
+        <div className="h-[82px] w-full flex items-center justify-between px-5 ">
           <h1 className="text-2xl text-[#252B42] font-[700]">
             {" "}
             <Link href={"/"}>Bandage </Link>
@@ -30,7 +30,7 @@ export default function Nav() {
         {isVisible && (
           <div className="h-[50vh] w-full flex-col ">
             <ul className="mt-10 flex flex-col text-center gap-4">
-              <li className="text-[20px] font-[400] text-[#737373]">
+              <li className="text-[20px] font-[400] text-[#737373] hover:text-[#252B42] hover:underline">
                 <Link
                   onClick={() => {
                     setIsVisible(!isVisible);
@@ -40,7 +40,7 @@ export default function Nav() {
                   Home{" "}
                 </Link>{" "}
               </li>
-              <li className="text-[20px] font-[400] text-[#737373]">
+              <li className="text-[20px] font-[400] text-[#737373] hover:text-[#252B42] hover:underline">
                 <Link
                   onClick={() => {
                     setIsVisible(!isVisible);
@@ -51,7 +51,7 @@ export default function Nav() {
                   Product{" "}
                 </Link>
               </li>
-              <li className="text-[20px] font-[400] text-[#737373]">
+              <li className="text-[20px] font-[400] text-[#737373] hover:text-[#252B42] hover:underline">
                 <Link
                   onClick={() => {
                     setIsVisible(!isVisible);
@@ -62,7 +62,7 @@ export default function Nav() {
                   Pricing{" "}
                 </Link>
               </li>
-              <li className="text-[20px] font-[400] text-[#737373]">
+              <li className="text-[20px] font-[400] text-[#737373] hover:text-[#252B42] hover:underline">
                 <Link
                   onClick={() => {
                     setIsVisible(!isVisible);

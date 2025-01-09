@@ -85,18 +85,18 @@ export default function Header() {
       {/*  Navbar  */}
       <nav className="bg-[#FFF] hidden md:flex">
         {/* main  div*/}
-        <div className="mx-auto flex justify-between items-center w-full  lg:max-w-[1340px] gap-10  h-[58px] px-4">
+        <div className="mx-auto flex justify-between items-center w-full  lg:max-w-[1340px] gap-10  h-[58px] xl:h-[66px] 2xl:h-[72px] px-4">
           {/* 1st div  */}
           <div className="">
-            <h1 className="text-2xl text-[#252B42] font-[700]">
+            <h1 className="text-2xl xl:text-3xl 2xl:text-4xl text-[#252B42] font-[700] ">
               {" "}
               <Link href={"/"}>Bandage </Link>
             </h1>
           </div>
           {/* 2nd div  */}
-          <div className="flex justify-between  lg:w-full">
-            <ul className="w-full md:w-[361px] hidden  md:flex md:justify-end lg:justify-start items-center gap-[15px] font-[700] text-[#737373] text-sm ">
-              <li>
+          <div className="flex justify-between  lg:w-full ">
+            <ul className=" w-full md:w-[361px] hidden  md:flex md:justify-end lg:justify-start items-center gap-[15px] font-[700] text-[#737373] text-sm ">
+              <li className="hover:text-[#252B42] hover:underline">
                 <Link href="/">Home</Link>
               </li>
               {/* Imported drop down  */}
@@ -112,17 +112,19 @@ export default function Header() {
                 </div>
               </Menu>
 
-              <li>
+              <li className="hover:text-[#252B42] hover:underline">
                 <Link href="/about">About</Link>
               </li>
-              <li>
+              <li className="hover:text-[#252B42] hover:underline">
                 <Link href="/blog">Blog</Link>
               </li>
-              <li>
+              <li className="hover:text-[#252B42] hover:underline">
                 <Link href="/contact">Contact</Link>
               </li>
-              <li>
-                <Link href="/team">Team</Link>
+              <li className="hover:text-[#252B42] hover:underline">
+                <Link href="/team" className="pb-12">
+                  Team
+                </Link>
               </li>
             </ul>
             {/* button and icons  */}
