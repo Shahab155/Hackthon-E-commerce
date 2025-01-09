@@ -1,27 +1,20 @@
 @tailwind base;
 @tailwind components;
+.btn {
+  @apply text-sm w-[170px] text-center rounded-sm bg-[#2DC071] text-white py-4 px-4 font-[700] hover:bg-green-700;
+}
+.btnLg {
+  @apply w-[195px] h-[52px] text-white bg-[#23A6F0] hover:bg-blue-600 font-[700] text-sm 
+}
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+html body {
+  overflow-x: hidden;
+  
 }
