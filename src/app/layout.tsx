@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/footer/Footer";
 import {Montserrat} from "next/font/google";
+
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import Nav from "@/components/nav/Nav";
+import Nav from "@/components/smallScreenNav/Nav";
 
 
 

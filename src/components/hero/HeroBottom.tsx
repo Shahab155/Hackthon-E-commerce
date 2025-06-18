@@ -40,7 +40,7 @@ export default function HeroBottom() {
       </div>
       {/* section 2  */}
       {/* conatiner  */}
-      <div className=" lg:max-w-[1440px] md:max-w-[950px] px-10 lg:px-0 sm:mx-auto h-auto md:h-[682px] flex flex-col  items-center md:flex-row gap-10 lg:gap-5">
+      <div className="mb-[100px] lg:max-w-[1440px] md:max-w-[950px] px-10 lg:px-0 sm:mx-auto h-auto md:h-[682px] flex flex-col  items-center md:flex-row gap-10 lg:gap-5">
         <div className="relative">
           <Image
             src="/Images/hero15.png"

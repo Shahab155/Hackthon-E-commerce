@@ -1,15 +1,15 @@
-import React from "react"
+import React from 'react'
 
 export default function Circles() {
   return (
-    
-    <>
-    <div className="flex gap-2 my-2 justify-center">
-        <div className="h-4 w-4 rounded-full bg-[#23A6F0]"></div>
-        <div className="h-4 w-4 rounded-full bg-[#23856D]"></div>
-        <div className="h-4 w-4 rounded-full bg-[#E77C40]"></div>
-        <div className="h-4 w-4 rounded-full bg-[#252B42]"></div>
-    </div>
-    </>
+   <>
+    <div className='w-full md:w-[150px] h-[30px] flex justify-center md:justify-start gap-[10px]'>
+        <span className='w-[30px] h-[30px] rounded-full bg-[#23A6F0]'></span>
+        <span className='w-[30px] h-[30px] rounded-full bg-[#2DC071]'></span>
+        <span className='w-[30px] h-[30px] rounded-full bg-[#E77C40]'></span>
+        <span className='w-[30px] h-[30px] rounded-full bg-[#252B42]'></span>
+        
+      </div>
+   </>
   )
 }

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Icons from "../commonContent/Icons";
+import CompanyLogos from "../companylogos/CompanyLogos";
 
 export default function AboutBottom() {
   return (
@@ -87,57 +88,19 @@ export default function AboutBottom() {
               </p>
             </div>
             {/* company logos  */}
-            <div className="max-w-[1050px] h-auto md:h-[174px] flex flex-wrap lg:flex-nowrap justify-around  gap-[50px] items-center">
-              <div className="relative">
-                <Image
-                  src="/Images/logo1.png"
-                  alt="Company Logo"
-                  width={103}
-                  height={34}
-                  className="object-cover "
-                />
-              </div>
-              <Image
-                src="/Images/logo2.png"
-                alt="Company Logo"
-                width={83}
-                height={58}
-              />
-              <Image
-                src="/Images/logo3.png"
-                alt="Company Logo"
-                width={102}
-                height={74}
-              />
-              <Image
-                src="/Images/logo4.png"
-                alt="Company Logo"
-                width={103}
-                height={42}
-              />
-              <Image
-                src="/Images/logo5.png"
-                alt="Company Logo"
-                width={104}
-                height={62}
-              />
-              <Image
-                src="/Images/logo6.png"
-                alt="Company Logo"
-                width={104}
-                height={74}
-              />
-            </div>
+            {/* <div className="max-w-[1050px] flex flex-wrap lg:flex-nowrap justify-between   items-center"> */}
+              <CompanyLogos/>
+            {/* </div> */}
           </main>
         </div>
       </section>
       {/* section 3: Grow Section */}
 
       {/* container  */}
-      <div className="bg-[#2A7CC7] my-16">
-        <main className="mx-auto w-full md:max-w-[1050px] h-auto md:h-[638px] flex flex-col md:flex-row items-center md:justify-between mb-20 px-10 xl:px-0">
+      <div className="bg-[#2A7CC7] py-8 md:py-0 my-16">
+        <main className="mx-auto w-full h-auto md:h-[638px] flex flex-col md:flex-row items-center md:justify-between gap-8 ">
           {/* text  */}
-          <div className="p-10 lg:p-0 w-full md:w-[460px] h-auto md:h-[238px]  flex flex-col justify-center md:items-start text-center items-center md:text-start gap-6 ">
+          <div className="w-full md:w-[40%] flex flex-col text-center md:text-start items-center md:items-start mx-7 gap-6 ">
             <h5 className="font-[700] text-white text-[16px]">WORK WITH US</h5>
             <h2 className="text-[40px] font-[700] text-white">
               Now Let&apos;s grow yours
@@ -152,7 +115,7 @@ export default function AboutBottom() {
             </button>
           </div>
           {/* Image  */}
-          <div className="relative">
+          <div className="relative ">
             <Image
               src="/Images/aboutLast.jpeg"
               alt="about image"

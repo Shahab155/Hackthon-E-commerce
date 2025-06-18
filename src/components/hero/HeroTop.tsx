@@ -5,8 +5,8 @@ export default function Hero() {
 
       {/* container  */}
 
-      <div className="w-full h-[711px] bg-[url('/Images/hero1.jpeg')] bg-cover bg-center">
-        <div className="mx-auto md:max-w-[950px] lg:max-w-[1044px] px-10 lg:px-0 h-[651px] flex items-center justify-center  ">
+      <div className="w-full h-auto md:h-[711px]  bg-[url('/Images/heroSection/hero1.jpeg')] bg-cover  bg-center">
+        <div className="mx-auto max-w-[1044px] h-[440px]  md:h-[651px] flex items-center justify-center  ">
           <main className="w-full h-[331px]">
             <div className="px-10 w-full sm:w-[599px] lg:w-[740px] h-auto sm:h-[331px] flex flex-col gap-[35px] text-center items-center sm:items-start sm:text-start">
               <h5 className="text-[16px] sm:text-[18px] lg:text-[20px] font-[700] text-white">
@@ -28,47 +28,45 @@ export default function Hero() {
       <section>
         {/* container */}
 
-        <main className="mx-auto w-full h-auto md:max-w-[950px] xl:max-w-[1050px]  lg:h-[770px] flex flex-col items-center gap-12 mt-20  px-10 xl:px-0 ">
+        <main className="mx-auto mt-20 w-full h-auto max-w-[1044px]">
           {/* heading and text  */}
-          <div className="w-[200px] md:w-full flex flex-col items-center gap-[10px] text-center ">
-            <h1 className="text-[#252B42] font-[700] text-2xl">
+            <div className="flex flex-col items-center gap-[10px] mx-auto">
+            <h1 className="text-primary font-[700] text-2xl">
               EDITOR&#8217;S PICK
             </h1>
-            <p className="text-[14px] text-[#737373] font-[400] ">
+            <p className="text-[14px] text-secondary font-[500] text-center">
               Problems trying to resolve the conflict between{" "}
             </p>
           </div>
           {/* images  */}
-
-          {/* images container  */}
-          <div className="md:max-w-[950px] xl:max-w-[1050px]  h-auto lg:h-[530px] flex flex-col items-center md:items-start  md:justify-center md:flex-row  gap-[30px]">
-            {/* image 1 and 2 */}
-            <div className="flex flex-wrap justify-center lg:flex-nowrap gap-[30px] ">
-              <div className="w-full md:w-[510px]  h-[500px] bg-[url('/Images/hero2.png')] flex items-end bg-cover bg-center ">
-                <span className="px-16 py-2 bg-white text-[#252B42] font-[700] my-4 ml-4 text-sm">
-                  MEN
-                </span>
-              </div>
-              <div className="w-[330px] md:w-[240px] h-[500px] bg-[url('/Images/hero3.png')] flex items-end bg-cover bg-center">
-                <span className="px-16 py-2 bg-white text-[#252B42] font-[700] my-4 ml-4 text-sm">
-                  WOMEN
-                </span>
-              </div>
-            </div>
-            {/* image 3 and 4 */}
-            <div className="flex flex-col gap-[15px]">
-              <div className="w-[330px] md:w-[240px] h-[240px] bg-[url('/Images/hero4.png')] flex items-end bg-cover bg-center">
-                <span className="px-16 py-2 bg-white text-[#252B42] font-[700] my-4 ml-4 text-sm">
-                  ACCESSORIES
-                </span>
-              </div>
-              <div className="w-[330px] md:w-[240px] h-[240px] bg-[url('/Images/hero5.png')] flex items-end bg-cover bg-center">
-                <span className="px-16 py-2 bg-white text-[#252B42] font-[700] my-4 ml-4 text-sm ">
-                  KIDS
-                </span>
-              </div>
-            </div>
-          </div>
+    <div className='max-w-[1024px] h-auto md:h-[600px] mx-auto ' >
+  <div className='mx-6 mt-12  w-[full] h-auto md:h-[450px] text-xs   grid grid-cols-1 place-item-end grid-rows-4 sm:grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-4'>
+    {/* 1 */}
+    <div className="border-l-2 border-red-900 h-[400px] md:h-full md:col-span-2 md:row-span-2 bg-[url('/Images/products/product1.jpeg')] bg-cover bg-center relative">
+        <div className='px-10 py-1 text-center font-[700] bg-white rounded-sm absolute bottom-4 left-6'>
+          MEN
+        </div>
+    </div>
+    {/* 2 */}
+    <div className="h-[400px] w-full md:h-full md:row-span-2 bg-[url('/Images/products/product2.jpeg')] bg-cover bg-center relative">
+   <div className='px-10 py-1 text-center font-[700] bg-white rounded-sm absolute bottom-4 left-6'>
+          WOMEN
+        </div>
+    </div>
+    {/* 3 */}
+    <div className="h-[400px] md:h-full bg-[url('/Images/products/product3.jpeg')] bg-cover bg-center relative">
+    <div className='px-6 py-1 text-center font-[700] bg-white rounded-sm absolute bottom-4 left-6'>
+          ACCESSORIES
+        </div>
+    </div>
+    {/* 4 */}
+    <div className="h-[400px]  md:h-full bg-[url('/Images/products/product4.jpeg')] bg-cover bg-center relative">
+    <div className='px-10 py-1 text-center font-[700] bg-white rounded-sm absolute bottom-4 left-6'>
+          KIDS
+        </div>
+    </div>
+  </div>
+    </div>
         </main>
       </section>
     </>

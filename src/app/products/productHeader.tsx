@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,11 +5,11 @@ import { BsEnvelope } from "react-icons/bs";
 import { Menu, MenuButton } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
-export default function Header() {
+export default function ProductHeader() {
   return (
     <>
-      <header className="bg-[#252B42]">
-        <div className="max-w-[1340px]  mx-auto  h-[58px] hidden  lg:flex  justify-between items-center text-white px-5 ">
+      <header className="bg-[#23856D] ">
+        <div className="max-w-[1030px] mx-auto  h-[46px] hidden  lg:flex  justify-between items-center text-white px-5">
           {/* div 1 */}
           <div className="flex items-center gap-4 h-12 ">
             {/* inner 1 */}
@@ -24,13 +23,13 @@ export default function Header() {
                   height={14}
                 />
               </span>
-              <p className="text-sm font-[700]">(225) 555-0118</p>
+              <p className="text-sm ">(225) 555-0118</p>
             </div>
             {/* inner 2 */}
 
             <div className="flex gap-2  items-center ">
               <BsEnvelope />
-              <p className="text-sm font-[700]  ">
+              <p className="text-sm">
                 miclleli.rivera@example.com
               </p>
             </div>
@@ -83,58 +82,57 @@ export default function Header() {
         </div>
       </header>
       {/*  Navbar  */}
-      <nav className="bg-[#FFF] hidden md:flex">
+      <nav className="bg-[#FFF]">
         {/* main  div*/}
-        <div className="mx-auto flex justify-between items-center w-full  lg:max-w-[1340px] gap-10  h-[58px] xl:h-[66px] 2xl:h-[72px] px-4">
+        <div className=" hidden md:flex justify-end items-center mx-auto gap-16  max-w-[1030px] h-[58px] px-4 ">
           {/* 1st div  */}
           <div className="">
-            <h1 className="text-2xl xl:text-3xl 2xl:text-4xl text-[#252B42] font-[700] ">
-              {" "}
-              <Link href={"/"}>Bandage </Link>
-            </h1>
+            <h1 className="text-2xl text-[#252B42] font-[700]">Bandage</h1>
           </div>
           {/* 2nd div  */}
-          <div className="flex justify-between  lg:w-full ">
-            <ul className=" w-full md:w-[361px] hidden  md:flex md:justify-end lg:justify-start items-center gap-[15px] font-[700] text-[#737373] text-sm ">
-              <li className="hover:text-[#252B42] hover:underline">
+          <div className="flex justify-between w-full ">
+            <ul className="w-full lg:w-[361px] hidden  md:flex items-center md:justify-end gap-[15px] font-[700] text-[#737373] text-sm ">
+              <li>
                 <Link href="/">Home</Link>
               </li>
               {/* Imported drop down  */}
+                  <Link href={"/products"}>
               <Menu as="div" className="relative inline-block text-left ">
                 <div>
+                  
                   <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md text-[#737373] bg-white px-3 py-2 text-sm font-bold   ring-gray-300 hover:bg-gray-50">
-                    <Link href={"/products"}>Shop</Link>
+                    Shop
                     <ChevronDownIcon
                       aria-hidden="true"
                       className="-mr-1 size-5 text-gray-400"
                     />
                   </MenuButton>
                 </div>
-              </Menu>
 
-              <li className="hover:text-[#252B42] hover:underline">
+              </Menu>
+                  </Link>
+
+              <li>
                 <Link href="/about">About</Link>
               </li>
-              <li className="hover:text-[#252B42] hover:underline">
+              <li>
                 <Link href="/blog">Blog</Link>
               </li>
-              <li className="hover:text-[#252B42] hover:underline">
+              <li>
                 <Link href="/contact">Contact</Link>
               </li>
-              <li className="hover:text-[#252B42] hover:underline">
-                <Link href="/team" className="pb-12">
-                  Team
-                </Link>
+              <li>
+                <Link href="/pages">Pages</Link>
               </li>
             </ul>
             {/* button and icons  */}
-            <div className=" justify-between w-[330px] text-[#23A6F0] items-center hidden lg:flex">
+            <div className="flex justify-between w-[330px] text-[#23A6F0] items-center md:hidden lg:flex">
               <div className="flex gap-[10px] font-[700] text-sm ">
                 <button>
                   <i className="bi bi-person text-[16px]"></i>
                 </button>
-                <Link href={"/login"}>Login /</Link>
-                <Link href={"/singnup"}>Register</Link>
+                <Link href={"/"}>Login /</Link>
+                <Link href={"/"}>Register</Link>
               </div>
               <div className="flex gap-[30px] justify-end ">
                 <button>
@@ -153,7 +151,10 @@ export default function Header() {
           </div>
           {/* closing div */}
           {/* menu Button  */}
+          
         </div>
+        
+    
       </nav>
     </>
   );
