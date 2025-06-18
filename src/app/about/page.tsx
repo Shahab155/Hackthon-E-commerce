@@ -29,7 +29,7 @@ export default function About() {
             {/* <div className="hidden md:flex W-[500px] h-[500px] rounded-[50%] bg-[#FFE9EA] relative top-20 z-[-1]" ></div> */}
 
             <Image
-              src="/Images/about1.png"
+              src="/Images/aboutSection/about1.png"
               alt="about hero image"
               width={571}
               height={500}
