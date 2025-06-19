@@ -8,15 +8,15 @@ export default function HeroBottom() {
 
       <div className="bg-[#23856D]">
         {/* container */}
-        <div className="mx-auto lg:max-w-[1044px] md:max-w-[850px] px-10 lg:px-0 h-auto md:h-[711px] flex items-end">
-          <main className="px-6 w-[1049px] h-auto md:h-[600px] flex flex-col items-center md:items-start gap-8 md:gap-0 md:flex-row  ">
+        <div className="mx-auto lg:max-w-[1044px] md:max-w-[850px] px-2  h-auto md:h-[711px] flex items-end">
+          <main className="px-3 max-w-[1049px] h-auto md:h-[600px] flex flex-col items-center md:items-start gap-8 md:gap-0 md:flex-row  ">
             {/* text */}
             <div className=" md:w-[599px] w-full h-auto md:h-[331px] mt-[60px] flex flex-col gap-[30px] text-center items-center md:items-start md:text-start">
               <h5 className="text-[16px] font-[700] text-white">Summer 2020</h5>
-              <h1 className="text-5xl sm:text-6xl font-[700] text-white">
+              <h1 className="text-[28px] sm:text-6xl font-[700] text-white">
                 Vita Classic Product
               </h1>
-              <p className="w-full sm:w-[376px] text-xl tacking-[0.2px] text-white">
+              <p className="sm:w-[376px] text-lg sm:text-xl tacking-[0.2px] text-white">
                 We know how large objects will act, but things on a small scale.
               </p>
               {/* button and price  */}
@@ -28,7 +28,7 @@ export default function HeroBottom() {
             {/* Image  */}
             <div className="w-full md:w-[45%] h-auto md:h-[60vh] relative flex justify-end items-end  md:items-start">
               <Image
-                src={"/Images/hero14.png"}
+                src={"/Images/heroSection/hero14.png"}
                 alt="Hero 14"
                 width={443}
                 height={500}
@@ -40,7 +40,7 @@ export default function HeroBottom() {
       </div>
       {/* section 2  */}
       {/* conatiner  */}
-      <div className="mb-[100px] lg:max-w-[1440px] md:max-w-[950px] px-10 lg:px-0 sm:mx-auto h-auto md:h-[682px] flex flex-col  items-center md:flex-row gap-10 lg:gap-5">
+      <div className="mb-[100px] lg:max-w-[1440px] md:max-w-[950px] px-4  sm:mx-auto h-auto md:h-[682px] flex flex-col  items-center md:flex-row gap-10 lg:gap-5">
         <div className="relative">
           <Image
             src="/Images/hero15.png"
@@ -54,10 +54,10 @@ export default function HeroBottom() {
           <h5 className="text-[#BDBDBD] text-[16px] md:[18px] lg:[20px] ">
             SUMMER 2020
           </h5>
-          <h2 className="text-[#252B42] text-[36px] md:text-[40px] lg:text-[48px]">
+          <h2 className="text-[#252B42] text-[28px] md:text-[40px] lg:text-[48px]">
             Part of the Neural Universe
           </h2>
-          <p className="text-[#BDBDBD] font-[400] text-xl w-full md:w-[376px]">
+          <p className="text-[#BDBDBD] font-[400] text-lg sm:text-xl w-[85%] md:w-[376px]">
             We know how large objects will act, but things on a small scale.
           </p>
           <div className="flex flex-col md:flex-row gap-[16px]">

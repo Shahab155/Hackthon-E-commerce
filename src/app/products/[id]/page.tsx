@@ -19,9 +19,9 @@ export default function ProductDetails({params}:{params:{id:string}}) {
    {  getProductDetails &&   getProductDetails.map((item)=>{
        return (
              
-            <div key={item.id} className="flex flex-col lg:flex-row items-center h-[500px] border-4 border-black lg:items-start justify-between max-w-[1090px] mx-auto  my-12">
-                <div className="rounded-lg w-[90%] lg:w-[50%] h-full relative">
-                    <Image src={item.image} alt="product image" height={100} width={400} className="md:w-[100%] object-cover  h-[500px]"/>
+            <div key={item.id} className="flex flex-col lg:flex-row items-center h-auto lg:h-[600px]  lg:items-start justify-between max-w-[1090px] mx-auto  my-12">
+                <div className="rounded-lg w-[100%] lg:w-[50%] h-full  relative">
+                    <Image src={item.image} alt="product image" height={100} width={400} className="w-[100%] object-cover object-top h-[600px]"/>
                 </div>
               <div className=" lg:w-[50%] flex flex-col  gap-8 p-8">
                 <h3 className="text-3xl text-primary font-[700] ">{item.heading}</h3>

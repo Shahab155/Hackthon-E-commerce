@@ -4,18 +4,18 @@ import { LuAlarmClock } from "react-icons/lu";
 
 export default function FeaturedPostCards({ image }: { image: string }) {
   return (
-    <div className=" lg:w-[330px] h-auto lg:h-[606px]">
-      {/* image and new */}
+    <div className="w-[95%] lg:w-[330px] h-auto lg:h-[606px] mx-auto">
+     {/* image and new */}
       <div
-        className={`w-full h-[300px] bg-center bg-cover`}
-        style={{ backgroundImage: `url(${image})` }}
-      >
+        className={`h-[300px] bg-center bg-cover rounded-lg`}
+       style={{ backgroundImage: `url(${image})` }}
+      > 
         <span className="bg-[#E74040] px-[10px] relative top-5 left-5 py-1 rounded-sm text-white font-bold text-[12px] w-[58px] h-[24px]">
           NEW
         </span>
       </div>
       {/* text-container  */}
-      <div className="w-full lg:w-[330px] h-[306px] flex flex-col justify-around gap-2 p-6">
+      <div className="text-center items-center sm:text-start sm:items-start lg:w-[330px] h-[306px] flex flex-col justify-around gap-2 p-6">
         <ul className="flex gap-[15px] text-[12px] sm:text-sm text-secondary">
           <li className="text-[#23A6F0]">Google</li>
           <li>Trending</li>
@@ -28,7 +28,7 @@ export default function FeaturedPostCards({ image }: { image: string }) {
           We focus on ergonomics and meeting you where you work. It&apos;s only
           a keystroke away.
         </p>
-        <div className="w-[298px] flex gap-4">
+        <div className="md:w-[298px] flex gap-4 sm:items-start items-center">
           <p className="flex items-center gap-[5px] text-[10px] ]">
             <LuAlarmClock className="text-[#23A6F0] size-4" />{" "}
             <span className=" text-[#737373]">22 April 2021</span>

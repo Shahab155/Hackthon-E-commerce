@@ -4,11 +4,11 @@ import Icons from "../commonContent/Icons";
 export default function Footer() {
   return (
     <>
-      <footer className="">
-        <section className="mx-auto px-6 lg:px-5 xl:px-0 lg:max-w-[1050px] md:max-w-[950px]  h-[488px]">
+      <footer>
+        <section className="mx-auto px-2 lg:px-5 xl:px-0 lg:max-w-[1050px] md:max-w-[950px]  h-[488px]">
           {/* heading and icons  */}
           <div className="h-[138px] flex flex-col gap-4 md:flex-row md:justify-between">
-            <h1 className="text-2xl leading-8 text-[#252B42] font-[700]">
+            <h1 className="text-2xl leading-8 text-primary font-[700]">
               Bandage
             </h1>
             {/* Social Media icons  */}
@@ -18,7 +18,7 @@ export default function Footer() {
           <div className="flex flex-col items-start sm:flex-row sm:flex-wrap gap-12 py-14 md:p-y-0 lg:flex-nowrap justify-between h-auto md:h-[272px] ">
             {/* heading-list-1  */}
             <div className=" flex flex-col gap-6">
-              <h5 className="font-[700] leading-6 tracking-[0.1px] text-[#252B42]">
+              <h5 className="font-[700] leading-6 tracking-[0.1px] text-primary">
                 Company Info
               </h5>
               <ul className="flex flex-col gap-5 font-[600] text-sm text-secondary">
@@ -30,7 +30,7 @@ export default function Footer() {
             </div>
             {/* heading-list-2  */}
             <div className="flex flex-col gap-6">
-              <h5 className="font-[700] leading-6 tracking-[0.1px] text-[#252B42]">
+              <h5 className="font-[700] leading-6 tracking-[0.1px] text-primary">
                 Legal
               </h5>
               <ul className="flex flex-col gap-5 font-[600] text-sm text-secondary">
@@ -42,7 +42,7 @@ export default function Footer() {
             </div>
             {/* heading-list-3  */}
             <div className="flex flex-col gap-6">
-              <h5 className="font-[700] leading-6 tracking-[0.1px] text-[#252B42]">
+              <h5 className="font-[700] leading-6 tracking-[0.1px] text-primary">
                 Features
               </h5>
               <ul className="flex flex-col gap-5 font-[600] text-sm text-secondary">
@@ -54,7 +54,7 @@ export default function Footer() {
             </div>
             {/* heading-list-4  */}
             <div className="flex flex-col gap-6">
-              <h5 className="font-[700] leading-6 tracking-[0.1px] text-[#252B42]">
+              <h5 className="font-[700] leading-6 tracking-[0.1px] text-primary">
                 Resources
               </h5>
               <ul className="flex flex-col gap-5 font-[600] text-sm text-secondary">
@@ -67,10 +67,10 @@ export default function Footer() {
             {/* heading-list-5  */}
 
             <div className="flex flex-col gap-6 md:gap-10 md:h-[170px] h-auto">
-              <h5 className="font-[700] leading-6 tracking-[0.1px] text-[#252B42]">
+              <h5 className="font-[700] leading-6 tracking-[0.1px] text-primary">
                 Get In Touch
               </h5>
-              <div className="w-full  md:w-[310px]   h-[58px] flex items-center font-[600] text-sm text-secondary">
+              <div className="w-[95%] md:w-[310px]   h-[58px] flex items-center font-[600] text-sm text-secondary">
                 <label className="flex items-center justify-center text-[#E6E6E6] rounded-[5px]">
                   <input
                     type="email"
@@ -79,7 +79,7 @@ export default function Footer() {
                     className="py-4 px-3"
                   />
                 </label>
-                <button className="w-[85px] h-[50px] bg-[#23A6F0] flex items-center justify-center text-[#E6E6E6] rounded-tr-[5px] rounded-br-[5px]">
+                <button className="w-[85px] h-[50px] text-xs sm:text-[14px] bg-[#23A6F0] flex items-center justify-center text-[#E6E6E6] rounded-tr-[5px] rounded-br-[5px]">
                   Subscribe</button>
                 
               </div>

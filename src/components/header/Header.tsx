@@ -134,7 +134,7 @@ export default function Header() {
                   <i className="bi bi-person text-[16px]"></i>
                 </button>
                 <Link href={"/login"}>Login /</Link>
-                <Link href={"/singnup"}>Register</Link>
+                <Link href={"/signup"}>Register</Link>
               </div>
               <div className="flex gap-[30px] justify-end ">
                 <button>

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Circles from "../commonContent/Circles";
 export default function Card(props: productCardType) {
   return (
-    <div className="w-full  md:w-[230px] h-[600px]  ">
+    <div className="w-full  md:w-[230px] h-[600px]  shadow-lg shadow-black rounded-md">
       <div className="h-[410px] w-full ">
         <Image
           src={props.image}
