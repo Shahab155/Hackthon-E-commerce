@@ -99,7 +99,8 @@ export default function HeroCards() {
 
         {/* cards-container-1  */}
       
-        <div className="mx-8 my-16 max-w-[1050px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 place-items-center">
+        <div className="gap-4 my-16 max-w-[1050px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 
+      place-items-center space-y-4">
 
     {
       heroCards .map((item)=>{

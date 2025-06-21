@@ -28,7 +28,7 @@ export default function Hero() {
       <section>
         {/* container */}
 
-        <main className="mx-auto mt-20 w-full h-auto max-w-[1044px]">
+        <main className="mx-auto mt-20 h-auto max-w-[1044px]">
           {/* heading and text  */}
             <div className="flex flex-col items-center gap-[10px] mx-auto">
             <h1 className="text-primary font-[700] text-2xl">
@@ -40,7 +40,7 @@ export default function Hero() {
           </div>
           {/* images  */}
     <div className='max-w-[1024px] h-auto md:h-[600px] mx-auto ' >
-  <div className='mx-6 mt-12  w-[full] h-auto md:h-[450px] text-xs   grid grid-cols-1 place-item-end grid-rows-4 sm:grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-4'>
+  <div className='mx-2 mt-12  w-[full] h-auto md:h-[450px] text-xs   grid grid-cols-1 place-item-end grid-rows-4 sm:grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-4'>
     {/* 1 */}
     <div className="border-l-2 border-red-900 h-[400px] md:h-full md:col-span-2 md:row-span-2 bg-[url('/Images/products/product1.jpeg')] bg-cover bg-center relative">
         <div className='px-10 py-1 text-center font-[700] bg-white rounded-sm absolute bottom-4 left-6'>
