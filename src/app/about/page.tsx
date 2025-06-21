@@ -109,7 +109,7 @@ export default function About() {
           <div className="realtive">
             {/* video image  */}
             <Image
-              src={"/Images/aboutVideo.png"}
+              src={"/Images/aboutSection/aboutVideo.png"}
               alt="video"
               width={989}
               height={540}
