@@ -7,8 +7,8 @@ export default function Nav() {
 
   return (
     <>
-      <header className="block md:hidden">
-        <div className="h-[82px] w-full flex items-center justify-between px-5 ">
+      <header className="block md:hidden ">
+        <div className="h-[85px]  flex items-center justify-between px-5">
           <h1 className="text-2xl text-primary font-[700]">
             {" "}
             <Link href={"/"}>Bandage </Link>
@@ -28,7 +28,7 @@ export default function Nav() {
           </div>
         </div>
         {isVisible && (
-          <div className="h-[50vh] w-full flex-col ">
+          <div className="h-[60vh] w-full flex-col ">
             <ul className="mt-10 flex flex-col text-center gap-4">
               <li className="text-[20px] font-[400] text-secondary hover:text-primary hover:underline">
                 <Link
@@ -45,10 +45,10 @@ export default function Nav() {
                   onClick={() => {
                     setIsVisible(!isVisible);
                   }}
-                  href={"/products"}
+                  href={"/about"}
                 >
                   {" "}
-                  Product{" "}
+                  About{" "}
                 </Link>
               </li>
               <li className="text-[20px] font-[400] text-secondary hover:text-primary hover:underline">
@@ -56,10 +56,9 @@ export default function Nav() {
                   onClick={() => {
                     setIsVisible(!isVisible);
                   }}
-                  href={"/pricing"}
+                  href={"/products"}
                 >
-                  {" "}
-                  Pricing{" "}
+                  Products
                 </Link>
               </li>
               <li className="text-[20px] font-[400] text-secondary hover:text-primary hover:underline">
@@ -73,6 +72,29 @@ export default function Nav() {
                   Contact{" "}
                 </Link>
               </li>
+               <li className="text-[20px] font-[400] text-secondary hover:text-primary hover:underline">
+                <Link
+                  onClick={() => {
+                    setIsVisible(!isVisible);
+                  }}
+                  href={"/pricing"}
+                >
+                  {" "}
+                  Pricing{" "}
+                </Link>
+              </li>
+               <li className="text-[20px] font-[400] text-secondary hover:text-primary hover:underline">
+                <Link
+                  onClick={() => {
+                    setIsVisible(!isVisible);
+                  }}
+                  href={"/team"}
+                >
+                  {" "}
+                  Team{" "}
+                </Link>
+              </li>
+             
             </ul>
           </div>
         )}

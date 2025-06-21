@@ -79,7 +79,7 @@ export default function Footer() {
                     className="py-4 px-3"
                   />
                 </label>
-                <button className="w-[85px] h-[50px] text-xs sm:text-[14px] bg-[#23A6F0] flex items-center justify-center text-[#E6E6E6] rounded-tr-[5px] rounded-br-[5px]">
+                <button className="w-[95px] h-[50px] text-xs sm:text-[14px] bg-[#23A6F0] flex items-center justify-center text-[#E6E6E6] rounded-tr-[5px] rounded-br-[5px]">
                   Subscribe</button>
                 
               </div>

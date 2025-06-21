@@ -9,7 +9,7 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 export default function Header() {
   return (
     <>
-      <header className="bg-[#252B42]">
+      <header className="bg-primary">
         <div className="max-w-[1340px]  mx-auto  h-[58px] hidden  lg:flex  justify-between items-center text-white px-5 ">
           {/* div 1 */}
           <div className="flex items-center gap-4 h-12 ">
@@ -88,7 +88,7 @@ export default function Header() {
         <div className="mx-auto flex justify-between items-center w-full  lg:max-w-[1340px] gap-10  h-[58px] xl:h-[66px] 2xl:h-[72px] px-4">
           {/* 1st div  */}
           <div className="">
-            <h1 className="text-2xl xl:text-3xl 2xl:text-4xl text-[#252B42] font-[700] ">
+            <h1 className="text-2xl xl:text-3xl 2xl:text-4xl text-primary font-[700] ">
               {" "}
               <Link href={"/"}>Bandage </Link>
             </h1>
@@ -96,7 +96,7 @@ export default function Header() {
           {/* 2nd div  */}
           <div className="flex justify-between  lg:w-full ">
             <ul className=" w-full md:w-[361px] hidden  md:flex md:justify-end lg:justify-start items-center gap-[15px] font-[700] text-[#737373] text-sm ">
-              <li className="hover:text-[#252B42] hover:underline">
+              <li className="hover:text-primary hover:underline">
                 <Link href="/">Home</Link>
               </li>
               {/* Imported drop down  */}
@@ -112,16 +112,16 @@ export default function Header() {
                 </div>
               </Menu>
 
-              <li className="hover:text-[#252B42] hover:underline">
+              <li className="hover:text-primary hover:underline">
                 <Link href="/about">About</Link>
               </li>
-              <li className="hover:text-[#252B42] hover:underline">
+              <li className="hover:text-primary hover:underline">
                 <Link href="/blog">Blog</Link>
               </li>
-              <li className="hover:text-[#252B42] hover:underline">
+              <li className="hover:text-primary hover:underline">
                 <Link href="/contact">Contact</Link>
               </li>
-              <li className="hover:text-[#252B42] hover:underline">
+              <li className="hover:text-primary hover:underline">
                 <Link href="/team" className="pb-12">
                   Team
                 </Link>
