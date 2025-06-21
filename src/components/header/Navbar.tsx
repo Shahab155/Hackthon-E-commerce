@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <>
       {/*  Navbar  */}
-      <nav className="bg-[#FFF] ">
+      <nav className="bg-[#FFF] shadow-sm shadow-secondary">
         <div className="mx-auto max-w-[1330px] h-[90px] hidden md:flex justify-evenly items-center">
           <div>
             <h1 className="text-2xl text-primary font-[700]">Bandage</h1>

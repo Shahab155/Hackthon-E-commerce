@@ -8,7 +8,7 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 export default function ProductHeader() {
   return (
     <>
-      <header className="bg-[#23856D] ">
+      <header className=" shadow-sm shadow-secondary">
         <div className="max-w-[1030px] mx-auto  h-[46px] hidden  lg:flex  justify-between items-center text-white px-5">
           {/* div 1 */}
           <div className="flex items-center gap-4 h-12 ">
