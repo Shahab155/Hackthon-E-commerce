@@ -25,7 +25,7 @@ export default function AboutBottom() {
           {/* items-1  */}
           <div className="w-[329px] h-[383px] ">
             <Image
-              src="/Images/aboutPerson1.jpeg"
+              src="/Images/aboutSection/aboutPerson1.jpeg"
               alt="girl holding mobile"
               width={316}
               height={231}
@@ -41,7 +41,7 @@ export default function AboutBottom() {
           {/* items-2  */}
           <div className="w-[329px] h-[383px] ">
             <Image
-              src="/Images/aboutPerson2.jpeg"
+              src="/Images/aboutSection/aboutPerson2.jpeg"
               alt="girl holding mobile"
               width={316}
               height={231}
@@ -57,7 +57,7 @@ export default function AboutBottom() {
           {/* item-3  */}
           <div className="w-[329px] h-[383px] ">
             <Image
-              src="/Images/aboutPerson3.jpeg"
+              src="/Images/aboutSection/aboutPerson3.jpeg"
               alt="girl holding mobile"
               width={316}
               height={231}
@@ -117,7 +117,7 @@ export default function AboutBottom() {
           {/* Image  */}
           <div className="relative ">
             <Image
-              src="/Images/aboutLast.jpeg"
+              src="/Images/aboutSection/aboutLast.jpeg"
               alt="about image"
               width={500}
               height={500}

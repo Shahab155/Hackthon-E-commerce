@@ -28,7 +28,7 @@ export default function HeroBottom() {
             {/* Image  */}
             <div className="w-full md:w-[45%] h-auto md:h-[60vh] relative flex justify-end items-end  md:items-start">
               <Image
-                src={"/Images/heroSection/hero14.png"}
+                src={"/Images/HeroSection/hero14.jpeg"}
                 alt="Hero 14"
                 width={443}
                 height={500}
@@ -43,7 +43,7 @@ export default function HeroBottom() {
       <div className="mb-[100px] lg:max-w-[1440px] md:max-w-[950px] px-4  sm:mx-auto h-auto md:h-[682px] flex flex-col  items-center md:flex-row gap-10 lg:gap-5">
         <div className="relative">
           <Image
-            src="/Images/hero15.png"
+            src="/Images/HeroSection/hero15.jpeg"
             alt="Couple"
             width={704}
             height={682}

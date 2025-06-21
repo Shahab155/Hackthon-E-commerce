@@ -5,7 +5,7 @@ export default function Hero() {
 
       {/* container  */}
 
-      <div className="w-full h-auto md:h-[711px]  bg-[url('/Images/heroSection/hero1.jpeg')] bg-cover  bg-center">
+      <div className="w-full h-auto md:h-[711px]  bg-[url('/Images/HeroSection/hero1.jpeg')] bg-cover  bg-center">
         <div className="mx-auto max-w-[1044px] h-[440px]  md:h-[651px] flex items-center justify-center  ">
           <main className="w-full h-[331px]">
             <div className="px-10 w-full sm:w-[599px] lg:w-[740px] h-auto sm:h-[331px] flex flex-col gap-[35px] text-center items-center sm:items-start sm:text-start">
