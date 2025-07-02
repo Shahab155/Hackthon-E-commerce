@@ -135,9 +135,8 @@ export default function Header() {
               {!user ?
               <div className="flex gap-[10px] font-[700] text-sm ">
                 
-                
-                <Link className="text-white px-8 py-3 rounded-lg bg-[#23A6F0] font-bold hover:bg-blue-600" href={"/sign-up"}>Register</Link>
                 <Link className="text-white px-8 py-3 rounded-lg bg-[#23A6F0] font-bold hover:bg-blue-600" href={"/sign-in"}>Login </Link>
+                <Link className="text-white px-8 py-3 rounded-lg bg-[#23A6F0] font-bold hover:bg-blue-600" href={"/sign-up"}>Register</Link>
               </div>
               : 
               <div className="flex items-center gap-4 ">
