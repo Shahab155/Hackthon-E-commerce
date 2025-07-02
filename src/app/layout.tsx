@@ -2,7 +2,14 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/footer/Footer";
 import {Montserrat} from "next/font/google";
-
+import {
+  ClerkProvider,
+  // SignInButton,
+  // SignUpButton,
+  // SignedIn,
+  // SignedOut,
+  // UserButton,
+} from '@clerk/nextjs'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Nav from "@/components/smallScreenNav/Nav";
 
@@ -22,6 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <ClerkProvider>
     <html lang="en">
       <body className={montserrat.className}>
       <Nav/>
@@ -29,5 +37,6 @@ export default function RootLayout({
         <Footer/>
       </body>
     </html>
+    </ClerkProvider>
   );
 }

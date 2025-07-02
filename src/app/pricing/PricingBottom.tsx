@@ -1,6 +1,5 @@
 import { FaFacebookSquare } from "react-icons/fa";
 import {
-  FaAngleRight,
   FaInstagram,
   FaLinkedin,
   FaTwitter,

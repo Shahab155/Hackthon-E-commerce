@@ -1,12 +1,15 @@
 "use client";
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { BsEnvelope } from "react-icons/bs";
 import { Menu, MenuButton } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import { UserButton, useUser } from "@clerk/nextjs";
 
 export default function Header() {
+
+  const {user} = useUser()
+
   return (
     <>
       <header className="bg-primary shadow-sm shadow-secondary">
@@ -128,14 +131,21 @@ export default function Header() {
               </li>
             </ul>
             {/* button and icons  */}
-            <div className=" justify-between w-[330px] text-[#23A6F0] items-center hidden lg:flex">
+            <div className=" justify-between  gap-3 text-[#23A6F0] items-center hidden lg:flex">
+              {!user ?
               <div className="flex gap-[10px] font-[700] text-sm ">
-                <button>
-                  <i className="bi bi-person text-[16px]"></i>
-                </button>
-                <Link href={"/login"}>Login /</Link>
-                <Link href={"/signup"}>Register</Link>
+                
+                
+                <Link className="text-white px-8 py-3 rounded-lg bg-[#23A6F0] font-bold hover:bg-blue-600" href={"/sign-up"}>Register</Link>
+                <Link className="text-white px-8 py-3 rounded-lg bg-[#23A6F0] font-bold hover:bg-blue-600" href={"/sign-in"}>Login </Link>
               </div>
+              : 
+              <div className="flex items-center gap-4 ">
+
+                <UserButton/>
+                <button className="text-white px-8 py-3 rounded-lg bg-[#23A6F0] hover:bg-blue-600">Dashboard</button>
+              </div>
+}
               <div className="flex gap-[30px] justify-end ">
                 <button>
                   <i className="bi bi-search"></i>

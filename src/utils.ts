@@ -4,7 +4,7 @@ export const productsData = [
   image: "/Images/products/product1.jpeg",
   heading: "English Department",
   subHeading: "Graphic Design",
-   description: "Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent door ENIM RELIT Mollie. Excitation venial consequent sent nostrum met. ",
+  description: "Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent door ENIM RELIT Mollie. Excitation venial consequent sent nostrum met. ",
   oldPrice: "10$",
   newPrice:"20$",
   price: "1433.9$",

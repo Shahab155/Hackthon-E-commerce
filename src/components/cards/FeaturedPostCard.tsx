@@ -4,7 +4,8 @@ import { LuAlarmClock } from "react-icons/lu";
 
 export default function FeaturedPostCards({ image }: { image: string }) {
   return (
-    <div className="w-[95%] lg:w-[330px] h-auto lg:h-[606px] mx-auto">
+    <div data-aos="fade-up"
+      className="w-[95%] lg:w-[330px] h-auto lg:h-[606px] mx-auto">
      {/* image and new */}
       <div
         className={`h-[300px] bg-center bg-cover rounded-lg`}

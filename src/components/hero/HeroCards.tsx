@@ -105,7 +105,7 @@ export default function HeroCards() {
     {
       heroCards .map((item)=>{
         return (
-          <div key={item.id}>
+          <div data-aos="fade-down" key={item.id}>
             <Link href={`/products/${item.id}`}>
             <Card image={item.image} heading={item.heading} subHeading={item.subHeading} oldPrice={item.oldPrice} newPrice={item.newPrice} circles={item.circles}/>
               

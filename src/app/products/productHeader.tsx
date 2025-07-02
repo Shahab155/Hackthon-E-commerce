@@ -1,14 +1,19 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { BsEnvelope } from "react-icons/bs";
 import { Menu, MenuButton } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import { useUser } from "@clerk/nextjs";
 
 export default function ProductHeader() {
+
+  const {user} = useUser()
+
   return (
     <>
-      <header className=" shadow-sm shadow-secondary">
+      <header className="bg-green-600 shadow-sm shadow-secondary">
         <div className="max-w-[1030px] mx-auto  h-[46px] hidden  lg:flex  justify-between items-center text-white px-5">
           {/* div 1 */}
           <div className="flex items-center gap-4 h-12 ">
@@ -128,11 +133,13 @@ export default function ProductHeader() {
             {/* button and icons  */}
             <div className="flex justify-between w-[330px] text-[#23A6F0] items-center md:hidden lg:flex">
               <div className="flex gap-[10px] font-[700] text-sm ">
-                <button>
-                  <i className="bi bi-person text-[16px]"></i>
-                </button>
-                <Link href={"/"}>Login /</Link>
-                <Link href={"/"}>Register</Link>
+              {! user &&
+              <div className="flex gap-4">
+                <Link href={"/sign-in"}>Login /</Link>
+                <Link href={"/sign-up"}>Register</Link>
+              </div>
+               
+                }
               </div>
               <div className="flex gap-[30px] justify-end ">
                 <button>

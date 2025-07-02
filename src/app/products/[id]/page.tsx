@@ -6,9 +6,11 @@ import ProductHeader from "../productHeader";
 import Circles from "@/components/commonContent/Circles";
 import Icons from "@/components/commonContent/Icons";
 
-export default function ProductDetails({params}:{params:{id:string}}) {
+export default async function ProductDetails({params}:{params:Promise<{id:string}>}) {
 
-    const getProductDetails = productsData.filter(item=> params.id === item.id)
+  const {id} = await params;
+
+    const getProductDetails =  productsData.filter(item=> item.id  === id )
     console.log(`Fetched data: ${getProductDetails}`)
   return (
       <>
@@ -16,7 +18,7 @@ export default function ProductDetails({params}:{params:{id:string}}) {
           <ProductHeader/>
     
      
-   {  getProductDetails &&   getProductDetails.map((item)=>{
+   {  getProductDetails.map((item)=>{
        return (
              
             <div key={item.id} className="flex flex-col lg:flex-row items-center h-auto lg:h-[600px]  lg:items-start justify-between max-w-[1090px] mx-auto  my-12">
